@@ -26,7 +26,7 @@ def select_series_title_with_most_human_characters
   "Write your SQL query here"
 
   "select title from characters, series
-   where characters.series_id = series.id AND characters.species = "human"
+   where characters.series_id = series.id AND characters.species = 'human'
    having count(title)"
 
 end
