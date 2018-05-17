@@ -26,13 +26,13 @@ CREATE TABLE books(
 CREATE TABLE characters(
   name TEXT,
   species TEXT,
-  moto TEXT,
+  motto TEXT,
   series_id INTEGER,
   author_id INTEGER,
   id INTEGER PRIMARY KEY
 );
 
-CREATE TABLE characters_book(
+CREATE TABLE character_books(
   id INTEGER PRIMARY KEY,
   book_id INTEGER,
   character_id INTEGER
