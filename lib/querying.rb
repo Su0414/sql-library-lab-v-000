@@ -5,7 +5,7 @@ end
 
 def select_name_and_motto_of_char_with_longest_motto
   "Write your SQL query here"
-  "select name, motto from characters order by motto"
+  "select name, motto from characters order by motto limit 1"
 end
 
 
