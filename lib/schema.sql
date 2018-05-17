@@ -22,3 +22,18 @@ CREATE TABLE books(
   series_id INTEGER,
   id INTEGER PRIMARY KEY
 );
+
+CREATE TABLE characters(
+  name TEXT,
+  species TEXT,
+  moto TEXT,
+  series_id INTEGER,
+  author_id INTEGER,
+  id INTEGER PRIMARY KEY
+);
+
+CREATE TABLE characters_book(
+  id INTEGER PRIMARY KEY,
+  book_id INTEGER,
+  character_id INTEGER
+);
