@@ -24,7 +24,11 @@ end
 
 def select_series_title_with_most_human_characters
   "Write your SQL query here"
-  
+
+  "select title from characters, series
+   where characters.series_id = series.id AND characters.species = "human"
+   having count(title)"
+
 end
 
 def select_character_names_and_number_of_books_they_are_in
